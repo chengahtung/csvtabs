@@ -554,7 +554,7 @@ export default function CSVCombiner() {
           
           <div className="text-slate-500 text-sm mt-4 text-center space-y-2">
             <p>&copy; {new Date().getFullYear()} CSV to Excel Tabs. All rights reserved.</p>
-            <p>Created by <a href="#" className="text-slate-700 hover:text-blue-600 transition-colors font-medium underline underline-offset-4">You</a>.</p>
+            <p>Created by <a href="https://github.com/chengahtung/csvtabs" className="text-slate-700 hover:text-blue-600 transition-colors font-medium underline underline-offset-4">Cheng Zhen Tung</a>.</p>
           </div>
         </div>
       </footer>
