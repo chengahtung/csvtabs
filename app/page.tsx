@@ -10,11 +10,11 @@ import {
   Loader2, 
   Download, 
   Menu, 
-  FileSpreadsheet, 
   Settings 
 } from 'lucide-react';
 import Papa from 'papaparse';
 import * as XLSX from 'xlsx';
+import { Logo } from '@/lib/LogoComponent';
 
 const CONFIG = {
   maxFiles: 10,
@@ -278,8 +278,8 @@ export default function CSVCombiner() {
       <header className="bg-white border-b border-slate-200 sticky top-0 z-40">
         <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2 font-bold text-xl text-slate-800">
-            <FileSpreadsheet className="w-6 h-6 text-blue-600" />
-            <span>CSV to Excel Tabs</span>
+            <Logo size="md" />
+            <span>CSV Tabs</span>
           </div>
           
           {/* Desktop Nav */}
@@ -526,7 +526,7 @@ export default function CSVCombiner() {
               There are many &quot;CSV Combiner&quot; tools on the internet, but most of them work by merging your data <em>vertically</em> stacking the rows of multiple CSV files into one giant list. 
             </p>
             <p>
-              <strong>CSV to Excel Tabs</strong> is different. It takes your multiple CSV files and imports each one into its own separate worksheet (tab) within a single Excel (<code>.xlsx</code>) workbook. This is perfect for organizing monthly reports, separating data by category, or keeping distinct datasets together in one file without mixing the rows.
+              <strong>CSV Tabs</strong> is different. It takes your multiple CSV files and imports each one into its own separate worksheet (tab) within a single Excel (<code>.xlsx</code>) workbook. This is perfect for organizing monthly reports, separating data by category, or keeping distinct datasets together in one file without mixing the rows.
             </p>
             <h3 className="text-xl font-semibold text-slate-900 mt-8 mb-3">100% Private & Secure</h3>
             <p>
@@ -540,8 +540,8 @@ export default function CSVCombiner() {
       <footer className="bg-slate-50 border-t border-slate-200 py-12 mt-16">
         <div className="max-w-5xl mx-auto px-4 flex flex-col items-center justify-center gap-6">
           <div className="flex items-center gap-2 font-bold text-xl text-slate-800 opacity-80 hover:opacity-100 transition-opacity">
-            <FileSpreadsheet className="w-6 h-6 text-blue-600" />
-            <span>CSV to Excel Tabs</span>
+            <Logo size="md" />
+            <span>CSV Tabs</span>
           </div>
           
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 text-sm font-medium text-slate-600">
@@ -553,7 +553,7 @@ export default function CSVCombiner() {
           </div>
           
           <div className="text-slate-500 text-sm mt-4 text-center space-y-2">
-            <p>&copy; {new Date().getFullYear()} CSV to Excel Tabs. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} CSV Tabs. All rights reserved.</p>
             <p>Created by <a href="https://github.com/chengahtung/csvtabs" className="text-slate-700 hover:text-blue-600 transition-colors font-medium underline underline-offset-4">Cheng Zhen Tung</a>.</p>
           </div>
         </div>
