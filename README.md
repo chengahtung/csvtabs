@@ -15,7 +15,7 @@ A simple tool to combine multiple CSV files into one Excel workbook, with each C
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/csvtabs.git
+   git clone https://github.com/chengahtung/csvtabs.git
    ```
 2. Navigate to the project directory:
    ```bash
@@ -62,6 +62,3 @@ A simple tool to combine multiple CSV files into one Excel workbook, with each C
 * **GitHub Sponsors**: [💖 Sponsor on GitHub](https://github.com/sponsors/chengahtung)
 
 [![Sponsor](https://img.shields.io/badge/Sponsor-☕-ff69b4)](https://buymeacoffee.com/chengahtung)
-
-## License
-This project is licensed under the MIT License.
