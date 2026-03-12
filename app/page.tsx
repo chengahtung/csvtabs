@@ -370,8 +370,11 @@ export default function CSVCombiner() {
                   </h3>
                   <p className="text-slate-500 mb-4 hidden md:block">or click to browse from your computer</p>
                   
-                  <div className="flex items-center gap-2 text-sm font-medium text-slate-500 bg-white shadow-sm border border-slate-200 px-3 py-1 rounded-full">
-                    <span>{files.length} / {CONFIG.maxFiles} files</span>
+                  <div className="flex flex-col items-center gap-2 mt-2">
+                    <div className="flex items-center gap-2 text-sm font-medium text-slate-500 bg-white shadow-sm border border-slate-200 px-3 py-1 rounded-full">
+                      <span>{files.length} / {CONFIG.maxFiles} files</span>
+                    </div>
+                    <p className="text-xs text-slate-400 font-medium">Max total upload size: {CONFIG.maxTotalSizeMB}MB</p>
                   </div>
                 </div>
               )}
