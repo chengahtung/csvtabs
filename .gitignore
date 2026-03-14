@@ -7,3 +7,6 @@ coverage/
 !.env.example
 next-env.d.ts
 metadata.json
+
+.vercel
+.env*.local
