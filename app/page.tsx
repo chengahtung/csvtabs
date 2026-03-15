@@ -66,6 +66,13 @@ export default function CSVCombiner() {
     setTimeout(() => setToastMessage(null), 5000);
   };
 
+  const handleBugReport = () => {
+    // Strips any sensitive query parameters, e.g. tokens.
+    const safeUrl = window.location.origin + window.location.pathname;
+    const url = `https://docs.google.com/forms/d/e/1FAIpQLScGfjYKFXuTmqNwC-lKpZX_aNRYlZ1EV8wMx1ZO3hXf_Kvutw/viewform?usp=pp_url&entry.1011504990=${encodeURIComponent(window.navigator.userAgent)}&entry.235553531=${encodeURIComponent(safeUrl)}`;
+    window.open(url, '_blank');
+  };
+
   const resolveTabName = (originalName: string, existingNames: string[], index: number): string | null => {
     let name = originalName.replace(/\.csv$/i, '');
     name = name.replace(CONFIG.excelForbiddenCharsRegex, '');
@@ -286,7 +293,7 @@ export default function CSVCombiner() {
           <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-slate-600">
             <a href="#how-to" className="hover:text-blue-600 transition-colors">How to</a>
             <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
-            <a href="mailto:support@example.com?subject=Bug Report" className="hover:text-blue-600 transition-colors">Report a bug</a>
+            <button onClick={handleBugReport} className="hover:text-blue-600 transition-colors">Report a bug</button>
           </nav>
 
           {/* Mobile Nav Toggle */}
@@ -303,7 +310,10 @@ export default function CSVCombiner() {
           <div className="md:hidden border-t border-slate-100 bg-white px-4 py-4 flex flex-col gap-4 text-sm font-medium text-slate-600 shadow-lg absolute w-full">
             <a href="#how-to" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-600">How to</a>
             <a href="#about" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-600">About</a>
-            <a href="mailto:support@example.com?subject=Bug Report" onClick={() => setMobileMenuOpen(false)} className="hover:text-blue-600">Report a bug</a>
+            <button onClick={() => {
+              setMobileMenuOpen(false);
+              handleBugReport();
+            }} className="hover:text-blue-600">Report a bug</button>
           </div>
         )}
       </header>
@@ -552,7 +562,7 @@ export default function CSVCombiner() {
             <a href="#how-to" className="hover:text-blue-600 transition-colors">How to Use</a>
             <a href="#about" className="hover:text-blue-600 transition-colors">About</a>
             <a href="#" className="hover:text-blue-600 transition-colors">Privacy Policy</a>
-            <a href="mailto:support@example.com?subject=Bug Report" className="hover:text-blue-600 transition-colors">Report a bug</a>
+            <button onClick={handleBugReport} className="hover:text-blue-600 transition-colors">Report a bug</button>
           </div>
           
           <div className="text-slate-500 text-sm mt-4 text-center space-y-2">
