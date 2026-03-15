@@ -1,4 +1,4 @@
-import type {Metadata} from 'next';
+import type { Metadata } from 'next';
 import './globals.css'; // Global styles
 import { Analytics } from '@vercel/analytics/next';
 
@@ -11,11 +11,11 @@ export const metadata: Metadata = {
     description: 'Import multiple CSVs into separate tabs in one Excel file. Free, instant, private.',
   },
   icons: {
-    icon: '/favicon.svg',
+    icon: '/csvtabs-logo.svg',
   }
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
       <body suppressHydrationWarning>
