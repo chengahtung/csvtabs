@@ -1,6 +1,10 @@
 # CSV Tabs — Convert Multiple CSVs into One Excel Workbook
+## 🚀 Try It Now
 
-**Live Tool →** [csvtabs.vercel.app](https://csvtabs.vercel.app)
+Use the tool instantly in your browser:
+👉 **Live Tool →** [csvtabs.vercel.app](https://csvtabs.vercel.app)
+
+No installation. No sign-up. Just upload your CSV files and download a single Excel workbook with separate tabs.
 
 > Most CSV tools *merge* your files into one giant list. CSV Tabs puts each CSV into its **own sheet** inside a single Excel workbook — no merging, no mixing.
 
@@ -91,4 +95,11 @@ A **Pro version** with extra features may be coming in the future. Supporting no
 
 ---
 
-Built by [Cheng Zhen Tung](https://github.com/chengahtung)
+## 👨‍💻 Author
+
+Built by **Cheng Zhen Tung**
+
+- GitHub → https://github.com/chengahtung
+- LinkedIn → https://linkedin.com/in/chengzhentung
+
+If this tool helped you, consider giving the repo a ⭐
